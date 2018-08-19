@@ -1,0 +1,122 @@
+:root{
+    --grey-1: #C8C8C8;
+    --grey-2: #836E93;
+    --dark-green: #145753;
+    --white: #fff;
+    --black: #000;
+    --shadow: 0 0 5px 0px rgba(104, 104, 104, 0.8);
+}
+a {
+    text-decoration: none;
+}
+.btn {
+    border: transparent;
+    border-radius: 3px;
+    padding: 12px 40px;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+h1,h2,h3,h4,h5 {
+    text-transform: uppercase;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--dark-green);
+    background-color: var(--white);
+}
+
+.col{
+    display: grid;
+    padding: 0 40px 0 40px;
+}
+.col-1 {
+
+    grid-template-columns: auto;
+
+}
+.col-2{
+    grid-template-columns: 1fr 1fr;
+
+}
+.col-2-23{
+    grid-template-columns: 2fr 5fr;
+    grid-template-areas: "logo menu";
+}
+.col-3{
+    grid-template-columns: auto auto auto;
+}
+.col-3-121{
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: "col_1 col_2 col_3";
+}
+.col-5 {
+    grid-template-columns: repeat(5,1fr);
+}
+
+
+
+/* for the elements styling */
+   /* Styling for Header */
+.header {
+
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.header_top{
+    grid-area:logo ;
+    margin: 20px 0 20px 0;
+}
+.image{
+    width: 100%;
+}
+.header__menu{
+    grid-area: menu;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.menu {
+    list-style-type: none;
+}
+.menu li {
+    float: left;
+}
+a.btn {
+    display: inline-block;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: var(--dark-green);
+    box-shadow: var(--shadow);
+}
+.header__middle{
+    justify-content: start;
+    grid-gap: 20px;
+}
+.circle{
+    width: 15vw;
+    height: 15vw;
+    border-radius: 50%;
+    background: blue;
+    background-size: cover;
+
+}
+.header__photo__1{
+    background-image: url("./assets/discussing.jpg");
+}
+.header__photo__2{
+    background-image: url("./assets/Flags.jpg");
+}
+.header__photo__3{
+    background-image: url("./assets/Chart.jpg");
+}
+
+.header__down{
+}
+.main {
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+}
